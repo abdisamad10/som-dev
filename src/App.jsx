@@ -1,15 +1,17 @@
-import { useState } from 'react'
+
 import RightSideBar from './Components/RightSideBar'
 import Feed from './Components/Feed'
 import SideBar from './Components/SideBar'
 import './App.css'
-import { Box, Button, Stack } from '@mui/material'
+import { Box, Stack } from '@mui/material'
+import NavBar from './Components/NavBar'
 
 function App() {
 
   return (
 
       <Box>
+      <NavBar />
       <Stack direction="row" justifyContent="space-between" spacing={2}>
       <SideBar />
       <Feed />

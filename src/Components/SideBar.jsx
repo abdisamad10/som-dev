@@ -6,7 +6,7 @@ function SideBar() {
     <Box
     bgcolor="lightpink"
     p={2}
-    flex={2}
+    flex={1}
     sx={{display: {xs: "none", sm: "block"}}}
     >
         SideBar

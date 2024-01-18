@@ -7,8 +7,8 @@ function Feed() {
 
     bgcolor="lightcyan"
     p={2}
-    flex={2}
-    sx={{display: {xs: "none", sm: "block"}}}
+    flex={4}
+    // sx={{display: {xs: "none", sm: "block"}}}
     >
       Feed
     </Box>
