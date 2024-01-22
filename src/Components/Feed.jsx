@@ -1,52 +1,18 @@
-import { Favorite, FavoriteBorder, MoreVert, Share } from '@mui/icons-material'
-import { Avatar, Box, Card, CardActions, CardContent, CardHeader, CardMedia, Checkbox, IconButton, Typography } from '@mui/material'
+import { Box } from '@mui/material'
 import React from 'react'
-
-function Feed() {
+import Post from './Post'
+function Feed(props) {
   return (
     <Box
     p={2}
     flex={4}
     // sx={{display: {xs: "none", sm: "block"}}}
     >
-   <Card >
-      <CardHeader
-        avatar={
-          <Avatar sx={{ bgcolor: "red" }} aria-label="recipe">
-            R
-          </Avatar>
-        }
-        action={
-          <IconButton aria-label="settings">
-            <MoreVert />
-          </IconButton>
-        }
-        title="Shrimp and Chorizo Paella"
-        subheader="September 14, 2016"
-      />
-      <CardMedia
-        component="img"
-        height="10%"
-        image="https://images.pexels.com/photos/7195133/pexels-photo-7195133.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        alt="Paella dish"
-      />
-      <CardContent>
-        <Typography variant="body2" color="text.secondary">
-          This impressive paella is a perfect party dish and a fun meal to cook
-          together with your guests. Add 1 cup of frozen peas along with the mussels,
-          if you like.
-        </Typography>
-      </CardContent>
-      <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
-        <Checkbox  icon={<FavoriteBorder />} checkedIcon={<Favorite sx={{color: "red"}} />} />
-        </IconButton>
-        <IconButton aria-label="share">
-          <Share />
-        </IconButton>
-      </CardActions>
-    
-    </Card>
+    <Post 
+      title={props.title}
+      subheader={props.subheader}
+      image={props.image}
+    />
     </Box>
   )
 }

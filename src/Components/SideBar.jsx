@@ -18,6 +18,7 @@ function SideBar() {
     flex={1}
     sx={{display: {xs: "none", sm: "block"}}}
     >
+    <Box position="fixed">
     <List>
       <ListItem disablePadding>
         <ListItemButton component="a" href='#home'>
@@ -92,6 +93,7 @@ function SideBar() {
         </ListItem>
 
       </List>
+      </Box>
     </Box>
     
   )
