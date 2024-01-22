@@ -1,12 +1,26 @@
 
-import { Favorite, FavoriteBorder, MoreVert, Share } from '@mui/icons-material'
-import { Avatar, Box, Card, CardActions, CardContent, CardHeader, CardMedia, Checkbox, IconButton, Typography } from '@mui/material'
+import {
+    Favorite, 
+    FavoriteBorder, 
+    MoreVert, 
+    Share } from '@mui/icons-material'
+import { Avatar, 
+    Box, 
+    Card, 
+    CardActions, 
+    CardContent, 
+    CardHeader, 
+    CardMedia, 
+    Checkbox, 
+    IconButton, 
+    Typography } from '@mui/material';
+    
 import React from 'react'
 
 function Post() {
   return (
    <Box>
-     <Card sx={{margin: 2}}>
+     <Card sx={{margin: 4}}>
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: "red" }} aria-label="recipe">
