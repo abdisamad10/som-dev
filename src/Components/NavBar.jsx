@@ -1,5 +1,5 @@
 import { AppBar, Avatar, Badge, Box, InputBase, Menu, MenuItem, Toolbar, Typography } from '@mui/material'
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { styled } from '@mui/material/styles';
 import PetsIcon from '@mui/icons-material/Pets';
 import { Mail,  Notifications } from '@mui/icons-material';
@@ -38,7 +38,7 @@ const UserBox = styled(Box)(({theme}) =>({
 function NavBar() {
 
   const [open, setOpen] = useState(false);
-
+  
   return (
    <AppBar position='sticky'>
     <StyleToolBar>
