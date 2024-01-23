@@ -88,7 +88,7 @@ const RightSideBar = () => {
           />
           </ImageListItem>
         </ImageList>
-        <Typography variant='h6' fontWeight={200} mt={2} mb={2}>
+        <Typography variant='h6' fontWeight={100} mt={2} mb={2}>
             Latest Conversation
         </Typography>
         <ListItem alignItems="flex-start">

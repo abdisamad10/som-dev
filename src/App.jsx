@@ -5,6 +5,7 @@ import SideBar from './Components/SideBar'
 import './App.css'
 import { Box, Stack } from '@mui/material'
 import NavBar from './Components/NavBar'
+import Add from './Components/Add'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <Feed />
       <RightSideBar />
       </Stack>
+      <Add />
       </Box>
   
   )
