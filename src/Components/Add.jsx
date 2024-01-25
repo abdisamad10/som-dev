@@ -1,4 +1,4 @@
-import { Box, Fab, Modal, Tooltip } from '@mui/material';
+import { Box, Fab, Modal, Tooltip, Typography } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
 
 import React, { useState } from 'react'
@@ -31,7 +31,7 @@ const StyledModal = styled(Modal)({
   aria-describedby="modal-modal-description"
 >
   <Box width={400} height={280} bgcolor="white" p={3} borderRadius={3}>
-    Hello
+    <Typography variant='6' color="gray" textAlign="center">Crate Post</Typography>
   </Box>
 </StyledModal>
     </>
